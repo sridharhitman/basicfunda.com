@@ -1,9 +1,11 @@
 import Head from 'next/head'
 import Image from 'next/image'
-import styles from '../styles/Home.module.css'
+import styles from '../styles/def.module.css';
+import mystyles from '../styles/cus.module.css';
 import Script from 'next/script'
 import Link from 'next/link'
-
+//  Components
+import Navbar from '../src/components/Navbar'
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -13,14 +15,9 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       {/* <Script></Script> */}
-      <nav className={styles.navigation}>
-        <ul>
-          <Link href="/"><a><li>Home</li></a></Link>
-          <Link href="/blogs"><a><li>Blogs</li></a></Link>
-          <Link href="/contact"><a><li>Contact</li></a></Link>
-          <Link href="/about"><a><li>About</li></a></Link>
-        </ul>
-      </nav>
+      <Navbar>
+
+      </Navbar>
       <main className={styles.main}>
         <h1 className={styles.title}>
          Basic Funda developer
@@ -31,22 +28,21 @@ export default function Home() {
           
         </p>
 
-       <div className="blogs">
+       <div className={mystyles.blogs}>
            <h2>Popular Blogs</h2>
-         <div className="blog-item">
+         <div className={mystyles.blogItem}>
            <h3>How to learn Javascript 2022</h3>
            <p>Javascript is used to add logic to websites</p>
          </div>
-         <div className="blog-item">
+         <div className={mystyles.blogItem}>
            <h3>How to learn Javascript 2022</h3>
            <p>Javascript is used to add logic to websites</p>
          </div>
-         
-         <div className="blog-item">
+         <div className={mystyles.blogItem}>
            <h3>How to learn Javascript 2022</h3>
            <p>Javascript is used to add logic to websites</p>
          </div>
-         
+         <div className="bg-red-700"> hello</div>
        </div>
       </main>
 

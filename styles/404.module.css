@@ -1,0 +1,13 @@
+.err{
+    text-align:center;
+    font-size:4rem;
+    font-weight:200;
+    color: black;
+    background-color:rgb(186, 227, 243);
+    vertical-align:middle;
+}
+.err a{
+    text-decoration-color: rgb(94, 142, 233);
+    text-decoration: underline;
+    color:rgb(235, 141, 34)
+}
