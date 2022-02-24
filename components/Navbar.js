@@ -1,12 +1,20 @@
 import React from "react";
-import styles from '../../styles/def.module.css';
-import mystyles from '../../styles/cus.module.css';
-import Link from 'next/link'
-const Navbar = () => {
+import mystyles from "../styles/cus.module.css";
+import Script from "next/script";
+import Link from "next/link";
+function Navbar() {
   return (
     <div>
+      
+      <Script
+        id="my-id6"
+        strategy="beforeInteractive"
+        src="https://cdn.tailwindcss.com"
+      >
+        {" "}
+      </Script>
       <nav className={mystyles.navigation}>
-        <ul>
+        <ul className="ul">
           <Link href="/">
             <a>
               <li>Home</li>
@@ -31,6 +39,6 @@ const Navbar = () => {
       </nav>
     </div>
   );
-};
+}
 
 export default Navbar;
