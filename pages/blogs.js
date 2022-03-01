@@ -5,17 +5,9 @@ import BlogRec from "../components/BlogRec";
 import styles from "../styles/blogcontainer.module.css";
 import Link from "next/link";
 
-const Blogs = () => {
-  const [Blogs, setBlogs] = useState([]);
-  useEffect(() => {
-    fetch("http://localhost:3000/api/blogs")
-      .then((a) => {
-        return a.json();
-      })
-      .then((parsed) => {
-        setBlogs(parsed);
-      });
-  }, []);
+const Blogs = (props) => {
+  const [Blogs, setBlogs] = useState(props.dataProps);
+ console.log(props)
   return (
     <div>
       {Blogs.map((BlogItem) => {
@@ -54,5 +46,13 @@ const Blogs = () => {
     </div>
   );
 };
+export async function getServerSideProps(context) {
+  let data = await fetch("http://localhost:3000/api/blogs")
+  let dataProps = await data.json();
+    
+  return {
+    props: {dataProps}, // will be passed to the page component as props
+  }
+}
 
 export default Blogs;
