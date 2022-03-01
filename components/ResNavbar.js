@@ -27,8 +27,8 @@ const ResNavbar = () => {
           strategy="beforeInteractive"
           src="https://cdn.tailwindcss.com"
         ></Script>
-        <nav className="">
-          <ul className="ul">
+        <nav id={navStyles.topnav} className={`${navStyles.navigation} ${navStyles.topnav}`}>
+          <ul>
             <Link href="/">
               <a>
                 <li>Home</li>
@@ -50,7 +50,7 @@ const ResNavbar = () => {
               </a>
             </Link>
             <Link href="javascript:void(0);">
-              <a class={navStyles.icon} onclick={showNav}>
+              <a class="icon" onclick={showNav}>
                 <i class="fa fa-bars"></i>
               </a>
             </Link>

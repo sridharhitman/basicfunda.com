@@ -35,6 +35,11 @@ function Navbar() {
               <li>About</li>
             </a>
           </Link>
+          <Link href="/buyapi">
+            <a>
+              <li>API</li>
+            </a>
+          </Link>
         </ul>
       </nav>
     </div>

@@ -2,7 +2,7 @@ import "../styles/globals.css";
 import Script from "next/script"
 import Navbar from "../components/Navbar";
 import NextNprogress from "nextjs-progressbar";
-import ResNavbar from "../components/ResNavbar"
+// import ResNavbar from "../components/ResNavbar"
 function MyApp({ Component, pageProps }) {
   return (
     <>
@@ -24,7 +24,7 @@ function MyApp({ Component, pageProps }) {
         }}
       />
       <Navbar/>
-      <ResNavbar/>
+      {/* <ResNavbar/> */}
       <Component {...pageProps} />
     </div>
     </>
