@@ -35,7 +35,7 @@ function Navbar() {
               <li>About</li>
             </a>
           </Link>
-          <Link href="/buyapi">
+          <Link href="/getAPI">
             <a>
               <li>API</li>
             </a>
