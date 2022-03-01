@@ -40,6 +40,11 @@ function Navbar() {
               <li>API</li>
             </a>
           </Link>
+          <Link href="/socialmedia">
+            <a>
+              <li>Social Media</li>
+            </a>
+          </Link>
         </ul>
       </nav>
     </div>
