@@ -50,8 +50,8 @@ const ResNavbar = () => {
               </a>
             </Link>
             <Link href="javascript:void(0);">
-              <a class="icon" onclick={showNav}>
-                <i class="fa fa-bars"></i>
+              <a className="icon" onClick={showNav}>
+                <i className="fa fa-bars"></i>
               </a>
             </Link>
           </ul>

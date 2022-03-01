@@ -17,7 +17,7 @@ const Slug = (props) => {
         src="https://cdn.tailwindcss.com"
       ></Script>
       <h1 className="text-slate-700 text-center text-3xl font-bold">
-        Today's Topic:
+        Today&apos;s Topic:
         <p className="text-violet-700 text-5xl mt-7">{blog && blog.title}</p>
       </h1>
       <p className=" w-[80rem] flex justify-center mx-auto bg-blue-100 text-gray-700 text-center font-semibold p-4 mt-8">

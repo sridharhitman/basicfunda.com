@@ -22,7 +22,7 @@ export default function Home() {
         </p>
 
        <div>
-         <div className="bg-lime-200 text-lime-600 font-mono text-lg font-bold p-5">Click on 'Blogs' to see the blogs</div>
+         <div className="bg-lime-200 text-lime-600 font-mono text-lg font-bold p-5">Click on &apos;Blogs&apos; to see the blogs</div>
        </div>
       </main>
 
