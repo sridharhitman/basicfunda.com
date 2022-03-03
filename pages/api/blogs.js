@@ -1,4 +1,5 @@
 // Next.js API route support: https://nextjs.org/docs/api-routes/introduction
+//grepper basic funda dev code
 import * as fs from "fs";
 export default async function handler(req, res) {
   let data = await fs.promises.readdir("blogdata");
@@ -14,7 +15,7 @@ export default async function handler(req, res) {
   }
   res.status(200).json(allBlogs);
 }
-
+// grepper end
 // fs.promises.readdir("blogdata",(err,data)=>{
 //   let allBlogs= [];
 
